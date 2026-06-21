@@ -1,0 +1,16 @@
+name: SKYMultiSpawn
+version: '${version}'
+
+main: com.usmcsky.SkyMultiSpawnPlugin
+api-version: '1.21'
+
+authors: [ USMCsky ]
+commands:
+  multispawn:
+    description: Save and select up to three bed spawns.
+    usage: /<command> <set|select|remove|list|gui> [slot]
+    aliases: [bedspawn]
+permissions:
+  skymultispawn.use:
+    description: Allows players to use multi-bed spawn commands.
+    default: true
