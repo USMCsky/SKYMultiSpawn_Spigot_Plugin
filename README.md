@@ -7,13 +7,11 @@
 [![Author](https://img.shields.io/badge/Author-USMCsky-00bcd4.svg)](https://github.com/USMCsky)
 
 A lightweight Spigot plugin that lets players save and manage up to **3 different bed spawn points** and choose which one is active for respawn.
-
 Perfect for survival servers where players maintain multiple bases and want control over where they respawn.
 
 ---
 
 ## Features
-
 - Save up to **3 bed spawn slots** per player
 - Choose an **active** spawn slot
 - Remove saved slots
@@ -25,31 +23,12 @@ Perfect for survival servers where players maintain multiple bases and want cont
 ---
 
 ## Requirements
-
 - **Minecraft/Spigot API:** `1.21` (as defined in `plugin.yml`)
 - **Java:** 21 (recommended based on modern Spigot 1.21 runtime expectations)
 
 ---
 
-## Installation
-
-1. Build the plugin:
-   ```bash
-   mvn clean package
-   ```
-2. Copy the generated JAR from `target/` into your server’s `plugins/` folder.
-3. Start or restart the server.
-4. Verify load in console and with:
-   ```text
-   /plugins
-   ```
-
----
-
 ## Player Instructions
-
-### Quick Start
-
 1. Place/own the beds you want to use as spawn points.
 2. Look directly at a bed (within 5 blocks) and save it:
    ```text
@@ -69,7 +48,6 @@ Perfect for survival servers where players maintain multiple bases and want cont
 ---
 
 ### Commands (Players)
-
 - `/multispawn set <1|2|3>`  
   Save the bed you are looking at (or standing on) into the slot.
 - `/multispawn select <1|2|3>`  
@@ -87,7 +65,6 @@ Alias:
 ---
 
 ### How Bed Detection Works
-
 `/multispawn set <slot>` works when you are:
 - Looking at a bed within 5 blocks, **or**
 - Standing on a bed, **or**
@@ -98,7 +75,6 @@ If no bed is detected, you’ll get an error message prompting you to look at/st
 ---
 
 ### Missing or Broken Bed Behavior
-
 If your active saved bed is destroyed or invalid:
 - The plugin automatically checks your other saved slots (1 → 3) for a valid bed.
 - If found, it switches active slot to that valid bed.
@@ -107,7 +83,6 @@ If your active saved bed is destroyed or invalid:
 ---
 
 ## Screenshots
-
 ### Command Usage Help
 
 Shows the full command list in chat (`set`, `select`, `remove`, `list`, and `gui`) while standing near multiple beds.
@@ -129,7 +104,6 @@ Example confirmation message after saving a bed to a slot, including world and c
 ---
 
 ## Permissions
-
 - `skymultispawn.use`  
   Allows usage of multi-bed spawn commands.  
   **Default:** `true`
@@ -137,7 +111,6 @@ Example confirmation message after saving a bed to a slot, including world and c
 ---
 
 ## Admin Notes
-
 - Main command: `multispawn`
 - Data file: `plugins/SKYMultiSpawn/bed-spawns.yml`
 - Each player’s data is stored by UUID with:
@@ -146,33 +119,7 @@ Example confirmation message after saving a bed to a slot, including world and c
 
 ---
 
-## Example Usage Flow
-
-```text
-/multispawn set 1
-/multispawn set 2
-/multispawn list
-/multispawn select 2
-/multispawn gui
-```
-
----
-
-## Build (Maven)
-
-```bash
-mvn clean package
-```
-
-Output JAR will be in:
-```text
-target/
-```
-
----
-
 ## Troubleshooting
-
 - **"Only players can use this command."**
   - Run commands in-game as a player (not server console).
 
@@ -186,7 +133,3 @@ target/
   - Check `/multispawn list` to confirm your active slot and bed validity.
 
 ---
-
-## Author
-
-- [USMCsky](https://github.com/USMCsky)
