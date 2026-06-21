@@ -1,5 +1,11 @@
 # SKYMultiSpawn (Spigot Plugin)
 
+[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://adoptium.net/)
+[![Spigot API](https://img.shields.io/badge/Spigot%20API-1.21-blue.svg)](https://www.spigotmc.org/wiki/spigot-plugin-development/)
+[![Last Commit](https://img.shields.io/github/last-commit/USMCsky/SKYMultiSpawn_Spigot_Plugin)](https://github.com/USMCsky/SKYMultiSpawn_Spigot_Plugin/commits/master)
+[![Repo Size](https://img.shields.io/github/repo-size/USMCsky/SKYMultiSpawn_Spigot_Plugin)](https://github.com/USMCsky/SKYMultiSpawn_Spigot_Plugin)
+[![Author](https://img.shields.io/badge/Author-USMCsky-00bcd4.svg)](https://github.com/USMCsky)
+
 A lightweight Spigot plugin that lets players save and manage up to **3 different bed spawn points** and choose which one is active for respawn.
 
 Perfect for survival servers where players maintain multiple bases and want control over where they respawn.
@@ -165,6 +171,22 @@ target/
 
 ---
 
+## Troubleshooting
+
+- **"Only players can use this command."**
+  - Run commands in-game as a player (not server console).
+
+- **"Look at a bed within 5 blocks..."**
+  - Move closer and aim directly at a bed block, or stand on/above the bed.
+
+- **"Slot X points to a missing or broken bed."**
+  - Bed was removed or changed. Re-save the slot with `/multispawn set <slot>`.
+
+- **Respawn didn’t go where expected**
+  - Check `/multispawn list` to confirm your active slot and bed validity.
+
+---
+
 ## Author
 
-- USMCsky
+- [USMCsky](https://github.com/USMCsky)
