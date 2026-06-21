@@ -100,6 +100,28 @@ If your active saved bed is destroyed or invalid:
 
 ---
 
+## Screenshots
+
+### Command Usage Help
+
+Shows the full command list in chat (`set`, `select`, `remove`, `list`, and `gui`) while standing near multiple beds.
+
+![Command usage help](https://github.com/user-attachments/assets/3ef48945-d4c9-4b95-a684-b2c1144503be)
+
+### Spawn Selector GUI
+
+The `/multispawn gui` menu displaying spawn slots and their current save status.
+
+![Spawn selector GUI](https://github.com/user-attachments/assets/4c12c47f-533f-4f49-b467-3fef56b1de6d)
+
+### Saving a Bed Slot
+
+Example confirmation message after saving a bed to a slot, including world and coordinates.
+
+![Saving a bed slot](https://github.com/user-attachments/assets/faf47290-39ca-4f17-90da-074bb889a8ec)
+
+---
+
 ## Permissions
 
 - `skymultispawn.use`  
