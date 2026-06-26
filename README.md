@@ -1,4 +1,4 @@
-# SKYMultiSpawn (Spigot Plugin)
+# Mulit_Bed_Spawn (Spigot Plugin)
 
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://adoptium.net/)
 [![Spigot API](https://img.shields.io/badge/Spigot%20API-1.21-blue.svg)](https://www.spigotmc.org/wiki/spigot-plugin-development/)
